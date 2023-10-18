@@ -49,18 +49,18 @@ spec:
     spec:
       containers:
         - name: kubenews
-          image: lucasguima/kube-news:0.1.0
+          image: lucasguima/kube-news:0.1.1
           ports:
             - containerPort: 8080
           env:
-            - name: DB_HOST
-              value: postgre
             - name: DB_DATABASE
               value: "kubenews"
             - name: DB_USERNAME
               value: "kubenews"
             - name: DB_PASSWORD
               value: "Pg#123"
+            - name: DB_HOST
+              value: postgre
 ---
 apiVersion: v1
 kind: Service
