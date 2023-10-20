@@ -17,6 +17,7 @@ jobs:
         run: echo "Container image push to registry"
   CD:
     runs-on: ubuntu-latest
+    needs: [CI]
     steps:
       - name: Cloud provider authentication
         run: echo "Cloud provider authentication"
