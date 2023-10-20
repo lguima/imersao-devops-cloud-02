@@ -38,6 +38,11 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       - name: KubeConfig setup
-        run: echo "KubeConfig setup"
-      - name: Deployment with kubectl
-        run: echo "Deployment with kubectl"
+        run: aws eks update-kubeconfig --name ${{ vars.AWS_EKS_CLUSTER_NAME }} --region ${{ vars.AWS_REGION }}
+      - name: Deploy to Kubernetes cluster
+        uses: Azure/k8s-deploy@v4.9
+        with:
+         manifests: |
+           ./kube-news/k8s/deployment.yaml
+         images: |
+           lucasguima/kube-news:0.3.${{ github.run_number }}
