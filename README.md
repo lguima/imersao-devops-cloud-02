@@ -37,8 +37,7 @@ https://s3.us-west-2.amazonaws.com/amazon-eks/cloudformation/2020-10-29/amazon-e
 
 # Credits
 
-Project made by [@lguima](https://github.com/lguima) during the **Imersão DevOps && Cloud** by [Fabricio Veronez
-](https://github.com/fabricioveronez).
+Project made by [@lguima](https://github.com/lguima) during the **Imersão DevOps && Cloud** by [Fabricio Veronez](https://github.com/fabricioveronez).
 
 # License
 
