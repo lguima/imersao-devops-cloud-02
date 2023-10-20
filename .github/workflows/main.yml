@@ -1,0 +1,26 @@
+name: CI-CD
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  CI:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Container image build
+        run: echo "Container image build"
+      - name: Registry login
+        run: echo "Registry login"
+      - name: Container image push to registry
+        run: echo "Container image push to registry"
+  CD:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cloud provider authentication
+        run: echo "Cloud provider authentication"
+      - name: KubeConfig setup
+        run: echo "KubeConfig setup"
+      - name: Deployment with kubectl
+        run: echo "Deployment with kubectl"
