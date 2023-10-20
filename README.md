@@ -16,24 +16,24 @@
 
 # Content
 
-## 1. Revolução Digital com DevOps e Docker
+## Revolução Digital com DevOps e Docker
 
-## 2. Kubernetes: do zero ao deploy
+## Kubernetes: do zero ao deploy
 
 Comando para criar o cluster com k3d e executar a aplicação:
 ```Bash
 k3d cluster create <cluster-name> -p "8080:30000@loadbalancer"
 ```
 
-## 3. AWS: Potencialize sua aplicação com Cloud Computing
+## AWS: Potencialize sua aplicação com Cloud Computing
 
 Template de rede para o EKS do CloudFormations:
 
 https://s3.us-west-2.amazonaws.com/amazon-eks/cloudformation/2020-10-29/amazon-eks-vpc-private-subnets.yaml
 
-## 4. GitHub Actions: Eficiência em entregas automatizadas
+## GitHub Actions: Eficiência em entregas automatizadas
 
-## 5. Terraform: Produtividade com automação de Infra as Code
+## Terraform: Produtividade com automação de Infra as Code
 
 # Credits
 
