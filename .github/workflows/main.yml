@@ -9,10 +9,13 @@ jobs:
   CI:
     runs-on: ubuntu-latest
     steps:
+      - name: Docker Login
+        uses: docker/login-action@v3.0.0
+        with:
+          username: ${{ secrets.DOCKER_REGISTRY_USER }}
+          password: ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
       - name: Container image build
         run: echo "Container image build"
-      - name: Registry login
-        run: echo "Registry login"
       - name: Container image push to registry
         run: echo "Container image push to registry"
   CD:
