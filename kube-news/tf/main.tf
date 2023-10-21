@@ -5,6 +5,12 @@ terraform {
       version = "5.21.0"
     }
   }
+
+  backend "s3" {
+    bucket = "bucket-lguima-imersao-devops-cloud-02"
+    key    = "terraform.state"
+    region = "us-east-1"
+  }
 }
 
 provider "aws" {
