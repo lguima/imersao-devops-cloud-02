@@ -37,4 +37,4 @@ jobs:
         run: terraform init -input=false
 
       - name: Terraform Apply
-        run: terraform apply --auto-aprove -input=false
+        run: terraform apply -auto-aprove -input=false
