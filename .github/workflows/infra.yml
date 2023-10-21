@@ -29,6 +29,9 @@ jobs:
 
       - name: Terraform Dir
         run: cd kube-news/tf/
+
+      - name: Current Dir
+        run: pwd
       
       - name: HashiCorp - Setup Terraform
         uses: hashicorp/setup-terraform@v1
